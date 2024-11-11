@@ -101,7 +101,7 @@ var init = function () {
             q: i,
             D: 2 * (i % 2) - 1,
             force: 0.2 * rand() + 0.7,
-            f: "rgba(106,66,194,0.3)", // Heart color (#6A42C2) with transparency
+            f: "rgb(139, 93, 255)", // Heart color (#6A42C2) with transparency
             trace: [],
         };
         for (var k = 0; k < traceCount; k++)
