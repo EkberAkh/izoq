@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  position: absolute;
+  top: 5vh; /* Position text at 5% of viewport height */
+  width: 100%;
+  text-align: center;
+  font-size: 8vw; /* Responsive font size */
+  font-family: Arial, sans-serif;
+  z-index: 1;
+  color: #6A42C2; /* Use the same color as the heart */
+  animation: fadeIn 2s ease-in-out, colorChange 5s infinite;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes colorChange {
+  0% { color: #6A42C2; }
+  50% { color: #B589D6; }
+  100% { color: #6A42C2; }
+}
+
+canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
